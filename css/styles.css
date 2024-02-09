@@ -202,31 +202,71 @@ color: var(--color-brand-light);
 .about-us-section {
     padding-top: 1px;
     padding-bottom: 88px; 
-font-size: 22px;
-line-height: 1.7;
+    font-size: 22px;
+    line-height: 1.7;
 }
 
 .about-us-container {
 display: flex;
 justify-content: space-between;
-gap: 40px;
+gap: 30px;
 }
 
 .about-us-content {
-max-width: 1240px;
+max-width: 710px;
 }
 
 .about-us-title {
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .about-us-photo {
-    box-shadow: 0px 4px 4px 0px #A8C6F533;  /*add var color here*/
+    position: relative;
+}
+
+.about-us-photo-1,
+.about-us-photo-2 {
+    box-shadow: 0px 4px 4px 0px #A8C6F533; /*add var color here*/
+    border-radius: 50%;
+}
+   
+
+.about-us-photo-1 {
+    margin: 0 168px 20px 5px;    
+}
+
+.about-us-photo-2 {
+    margin: 20px 0 0 196px;
+}
+
+.about-us-icon-1,
+.about-us-icon-2,
+.about-us-icon-3 {
+position: absolute;
+content: '';
+}
+
+.about-us-icon-1 {
+left: 150px;
+right: 300px;
+bottom: 270px;
+}
+
+.about-us-icon-2 {
+top: 100px;
+left: 503px;
+}
+
+.about-us-icon-3 {
+top: 270px;
+left: 505px;
 }
 
 .about-us-text .brand {
     font-weight: 600;
 }
+
 
 /* why-us-section */
 .why-us-section {
@@ -381,6 +421,24 @@ margin-bottom: 48px;
 /* Footer */
 .footer {
     padding: 56px 0;
+    /* color: var(--color-primary-light); */
+    position: relative;
+    background-color: var(--color-brand-dark);
+    background-image: url('../images/footer-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer::after {
+    position: absolute;
+    width: 278px;
+    height: 150px;
+    bottom: 0;
+    right: 0;
+    background-image: url('../images/pexels.png');
+    background-repeat: no-repeat;
+    content: '';
 }
 
 .footer-container {
@@ -403,13 +461,6 @@ margin-bottom: 48px;
 .address-list,
 .address-info {
     flex-grow: 1;
-}
-
-.footer {
-    /* color: var(--color-primary-light); */
-    background-color: var(--color-brand-dark);
-    background-size: cover;
-    background-position: center;
 }
 
 .address-link {
@@ -437,3 +488,35 @@ margin-bottom: 48px;
     line-height: 1.17;
 }
 
+/* Modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5) /*#747272; /* add var color */
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    width: 723px; 
+    height: 681px;
+    background-color: var(--color-brand-dark);
+    border-radius: 48px;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+}

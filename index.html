@@ -55,7 +55,7 @@
         <div class="hero-container">
           <p>Косметологічна клініка</p>
           <h1 lang="en" class="hero-title">Beauty Zone</h1>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
           <p class="hero-text limited">
             <span class="brand">Запишись та отримай безкоштовну консультацію нашого
               косметолога</span>
@@ -67,32 +67,38 @@
         <div class="container">
           <div class="about-us-container">
   <div class="about-us-content">
-    <h2 class="about-us-title section-title">Перевтілюйтесь в <span class="accent">Beauty Zone!</span>
+    <h2 class="about-us-title section-title">Перевтілюйтесь <br />в <span class="accent">Beauty Zone!</span>
     </h2>
     <p>
-      Наша косметологічна клініка пропонує вам професійні послуги з
+      Наша косметологічна клініка пропонує вам професійні послуги <br /> з
       догляду за шкірою обличчя та тіла.
     </p>
     <p class="about-us-text">
       B <span class="brand">Beauty Zone</span> ми гарантуємо найвищі
-      стандарти якості та приємний сервіс. Наші косметологічні процедури
-      та препарати допоможуть вам підтримувати свою красу та молодість. З
-      нами краса назавжди!
+      стандарти якості <br /> та приємний сервіс. Наші косметологічні процедури
+      та препарати допоможуть вам підтримувати свою красу та молодість. 
+      <br /> З нами краса назавжди!
     </p>
   </div>
   <div class="about-us-photo">
-    <svg class="about-us-icon" width="64" height="64">
-      <use href="./images/icons.svg#icon-Star-1"></use>
+    <ul>
+   <li>
+    <svg class="about-us-icon-2" width="40" height="40">
+      <use href="./images/icons.svg#icon-Star-2"></use>
     </svg>
-  <img src="./images/woman's-face-before.jpg" alt="Лице жінки до прийому" />
-  <svg class="about-us-icon" width="40" height="40">
-    <use href="./images/icons.svg#icon-Star-2"></use>
+  <img class="about-us-photo-1" src="./images/woman's-face-before.jpg" alt="Лице жінки до прийому" />
+  <svg class="about-us-icon-1" width="64" height="64">
+    <use href="./images/icons.svg#icon-Star-1"></use>
   </svg>
-    <svg class="about-us-icon" width="16" height="16">
-      <use href="./images/icons.svg#icon-Star-3"></use>
-    </svg>
-  <img src="./images/woman's-face-after.jpg" alt="Лице жінки після прийому" />
-  </div>
+  </li>
+    <li>
+  <svg class="about-us-icon-3" width="16" height="16">
+    <use href="./images/icons.svg#icon-Star-3"></use>
+  </svg>
+  <img class="about-us-photo-2" src="./images/woman's-face-after.jpg" alt="Лице жінки після прийому" />
+   </li>
+    </ul>
+</div>
           </div>
         </div>
       </section>
@@ -247,7 +253,7 @@
     </li>
     <li>
       <a class="address-link" href="https://maps.app.goo.gl/xqURyBp9Ejh7N3R17" target="_blank">
-        Україна, м. Київ, вул. Тараса Шевченка 5
+        Україна, м. Київ, <br /> вул. Тараса Шевченка 5
       </a>
     <li>
       <a href="#">
@@ -280,5 +286,12 @@
         </div>
       </div>
     </footer>
+<div class="backdrop">
+  <div class="modal">
+          <button class="modal-btn-close" type="button">Close</button>
+  </div>
+</div>
+
+<script src="./js/modal.js"></script>
   </body>
 </html>
